@@ -2,7 +2,7 @@ import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStat
 import { app } from "../Firebase/firebase.config";
 import {  createContext, useEffect, useState } from "react";
 
-export const AuthContext = createContext('');
+export const AuthContext = createContext(null);
 
  const auth = getAuth(app);
 
@@ -31,7 +31,7 @@ const AuthProvider = ({ children }) => {
     const updateUserProfile=(name,photo)=>{
         return updateProfile(auth.currentUser,{
              displayName:name,
-             photoUrl:photo,
+             photoURL:photo,
          });
     }
 

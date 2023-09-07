@@ -5,9 +5,11 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './Router/Router.jsx'
 import { Toaster } from 'react-hot-toast'
+import AuthProvider from './Provider/AuthProvider'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <div className='container mx-auto'>
     <Toaster
     
@@ -21,6 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       </RouterProvider>
     </div>
+    </AuthProvider>
+   
     
   </React.StrictMode>,
 )

@@ -4,6 +4,7 @@ import Home from "../Page/Home/Home/Home";
 import Course from "../Page/Course/Course";
 import Login from "../Page/Login/Login";
 import SignUp from "../Page/SignUp/SignUp";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -19,7 +20,7 @@ import SignUp from "../Page/SignUp/SignUp";
             },
             {
                path:'course',
-               element:<Course></Course>
+               element:<PrivateRoute><Course></Course></PrivateRoute>
             },
             {
                path:'login',
