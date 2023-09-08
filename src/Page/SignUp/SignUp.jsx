@@ -77,9 +77,7 @@ const SignUp = () => {
                                 {/* {
                                 errors.password?.type==='maxLength' && <p className="text-red-600">password must be 6 character</p>
                               } */}
-                                <label className="label">
-                                    <a href="#" className="label-text opacity-60 text-white">Forgot password?</a>
-                                </label>
+                               
                             </div>
                             <div className="form-control mt-6">
 

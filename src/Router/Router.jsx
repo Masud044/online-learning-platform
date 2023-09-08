@@ -20,7 +20,7 @@ import PrivateRoute from "./PrivateRoute";
             },
             {
                path:'course',
-               element:<PrivateRoute><Course></Course></PrivateRoute>
+               element:<Course></Course>
             },
             {
                path:'login',
