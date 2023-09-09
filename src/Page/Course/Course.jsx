@@ -6,11 +6,10 @@ import { useRef, useState } from 'react';
 
 const Course = () => {
     const [activeTab, setActiveTab] = useState(" ");
-     const [search, setSearch] = useState('');
-     const searchref = useRef(null);
+    
 
     const { isLoading, data: course = [] } = useQuery({
-        queryKey: ['courses', activeTab,search],
+        queryKey: ['courses', activeTab],
         queryFn: async () => {
             const res = await fetch(`http://localhost:5000/courses/${activeTab}`)
             return res.json();
@@ -20,10 +19,7 @@ const Course = () => {
     
 
 
-    const handleSearch = () =>{
-         console.log(searchref.current.value)
-          setSearch(searchref.current.value)
-    }
+   
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
@@ -44,29 +40,20 @@ const Course = () => {
     return (
         <div className='mt-20'>
 
-            <div className=" form-control bg-gray-200 p-10 ">
-                <div className="input-group flex items-center justify-center  ">
-                  
-               
-                    <input ref={searchref} type="text" placeholder="Search your favourite course" className="input input-bordered w-96" />
-                    <button onClick={handleSearch} className="btn btn-square bg-purple-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </button>
-                </div>
-            </div>
+           
 
             <div className="mt-20 text-center w-100 mx-auto">
                 <div className="d-flex justify-center items-center">
 
 
                     <div onClick={() => handleTabClick("Design")}
-                        className={`tab Design font-bold ${activeTab == "Design" ? " bg-purple-900 text-white" : ""
+                        className={`tab Design rounded-lg font-bold ${activeTab == "Design" ? " bg-purple-900 text-white" : ""
                             }`}>
                         Design
                     </div>
                     <div
                         onClick={() => handleTabClick("WebDevelopment")}
-                        className={`tab  WebDevelopment font-bold ${activeTab == "WebDevelopment" ? " bg-purple-900 text-white" : ""
+                        className={`tab  WebDevelopment rounded-lg font-bold ${activeTab == "WebDevelopment" ? " bg-purple-900 text-white" : ""
                             }`}  >
                         WebDevelopment
 
@@ -74,7 +61,7 @@ const Course = () => {
                     </div>
                     <div
                         onClick={() => handleTabClick("DataScience")}
-                        className={`tab  DataScience font-bold ${activeTab == "DataScience" ? " bg-purple-900 text-white" : ""
+                        className={`tab  DataScience rounded-lg font-bold ${activeTab == "DataScience" ? " bg-purple-900 text-white" : ""
                             }`}  >
                         DataScience
 
@@ -82,7 +69,7 @@ const Course = () => {
                     </div>
                     <div
                         onClick={() => handleTabClick("ComputerScience")}
-                        className={`tab  ComputerScience font-bold ${activeTab == "ComputerScience" ? " bg-purple-900 text-white" : ""
+                        className={`tab  ComputerScience rounded-lg font-bold ${activeTab == "ComputerScience" ? " bg-purple-950 text-white" : ""
                             }`}  >
                         ComputerScience
 
@@ -91,7 +78,7 @@ const Course = () => {
 
                     <div
                         onClick={() => handleTabClick("Marketing")}
-                        className={`tab  Marketing font-bold ${activeTab == "Marketing" ? " bg-purple-900 text-white" : ""
+                        className={`tab  Marketing rounded-lg font-bold ${activeTab == "Marketing" ? " bg-purple-900 text-white" : ""
                             }`}  >
                         Marketing
 

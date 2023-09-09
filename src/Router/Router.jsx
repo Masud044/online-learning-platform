@@ -5,6 +5,7 @@ import Course from "../Page/Course/Course";
 import Login from "../Page/Login/Login";
 import SignUp from "../Page/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
+import CourseDetails from "../Page/Course/CourseDetails";
 
 
 
@@ -29,6 +30,10 @@ import PrivateRoute from "./PrivateRoute";
             {
                path:'signup',
                element:<SignUp></SignUp>
+            },
+            {
+               path:'details/:id',
+               element:<CourseDetails></CourseDetails>
             }
 
             
