@@ -1,413 +1,584 @@
- [
-    {
-      "courseName": "Introduction to Programming",
-      "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-      "category": "ComputerScience",
-      "enroll": 2500,
-      "duration": "6 weeks",
-      "rating": 4.5,
-     "courseFee": 99.99,
-      "lessons": 12,
-      "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-      "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-    },
-    {
-        "courseName": "Web Development Bootcamp",
-        "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
-        "category": "WebDevelopment",
-      "enroll": 3500,
-      "duration": "8 weeks",
-      "rating": 4.8,
-      "courseFee": 149.99,
-      "lessons": 20,
-      "courseDescription": "Become a full-stack web developer and build dynamic web applications.",
-      "curriculum": ["HTML and CSS", "JavaScript Fundamentals", "Node.js and Express.js", "React.js", "Database Management"]
-    },
-    {
-      "courseName": "Data Science Fundamentals",
-      "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
-      "category": "DataScience",
-      "enroll": 1800,
-      "duration": "10 weeks",
-      "rating": 4.7,
-      "courseFee": 179.99,
-      "lessons": 15,
-      "courseDescription": "Explore the world of data science and analysis.",
-      "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-    },
-    {
-      "courseName": "Graphic Design Masterclass",
-      "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
-      "category": "Design",
-      "enroll": 2800,
-      "duration": "8 weeks",
-      "rating": 4.6,
-      "courseFee": 129.99,
-      "lessons": 18,
-      "courseDescription": "Unlock your creative potential with graphic design.",
-      "curriculum": ["Typography and Layout", "Image Editing with Adobe Photoshop", "Logo Design", "UI/UX Design Principles"]
-    },
-    {
-      "courseName": "Digital Marketing Strategy",
-      "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
-      "category": "Marketing",
-      "enroll": 3200,
-      "duration": "12 weeks",
-      "rating": 4.9,
-      "courseFee": 199.99,
-      "lessons": 24,
-      "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-      "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-    },
-    {
-      "courseName": "Photography Essentials",
-      "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
-     " category": "Photography",
-      "enroll": 2200,
-      "duration": "6 weeks",
-      "rating": 4.4,
-      "courseFee": 79.99,
-      "lessons": 10,
-      "courseDescription": "Master the art of photography and composition.",
-      "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-    },
-    {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Photography Essentials",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-       " category": "Photography",
-        "enroll": 2200,
-        "duration": "6 weeks",
-        "rating": 4.4,
-        "courseFee": 79.99,
-        "lessons": 10,
-        "courseDescription": "Master the art of photography and composition.",
-        "curriculum": ["Camera Basics", "Composition Techniques", "Lighting and Exposure", "Post-Processing with Adobe Lightroom"]
-      },
-      {
-        "courseName": "Digital Marketing Strategy",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-        "category": "Marketing",
-        "enroll": 3200,
-        "duration": "12 weeks",
-        "rating": 4.9,
-        "courseFee": 199.99,
-        "lessons": 24,
-        "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-        "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-      },
-      {
-        "courseName": "Digital Marketing Strategy",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "Marketing",
-        "enroll": 3200,
-        "duration": "12 weeks",
-        "rating": 4.9,
-        "courseFee": 199.99,
-        "lessons": 24,
-        "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-        "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-      },
-      {
-        "courseName": "Digital Marketing Strategy",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-        "category": "Marketing",
-        "enroll": 3200,
-        "duration": "12 weeks",
-        "rating": 4.9,
-        "courseFee": 199.99,
-        "lessons": 24,
-        "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-        "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-      },
-      {
-        "courseName": "Digital Marketing Strategy",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-        "category": "Marketing",
-        "enroll": 3200,
-        "duration": "12 weeks",
-        "rating": 4.9,
-        "courseFee": 199.99,
-        "lessons": 24,
-        "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-        "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-      },
-      {
-        "courseName": "Digital Marketing Strategy",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "Marketing",
-        "enroll": 3200,
-        "duration": "12 weeks",
-        "rating": 4.9,
-        "courseFee": 199.99,
-        "lessons": 24,
-        "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
-        "curriculum": ["SEO and Content Marketing", "Social Media Advertising", "Email Marketing", "Analytics and ROI"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Data Science Fundamentals",
-        "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
-        "category": "DataScience",
-        "enroll": 1800,
-        "duration": "10 weeks",
-        "rating": 4.7,
-        "courseFee": 179.99,
-        "lessons": 15,
-        "courseDescription": "Explore the world of data science and analysis.",
-        "curriculum": ["Data Collection and Cleaning", "Exploratory Data Analysis", "Machine Learning Basics", "Data Visualization"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Introduction to Programming",
-        "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
-        "category": "ComputerScience",
-        "enroll": 2500,
-        "duration": "6 weeks",
-        "rating": 4.5,
-       "courseFee": 99.99,
-        "lessons": 12,
-        "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
-        "curriculum": ["Introduction to Variables", "Control Structures", "Functions and Methods", "Arrays and Lists"]
-      },
-      {
-        "courseName": "Graphic Design Masterclass",
-        "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
-        "category": "Design",
-        "enroll": 2800,
-        "duration": "8 weeks",
-        "rating": 4.6,
-        "courseFee": 129.99,
-        "lessons": 18,
-        "courseDescription": "Unlock your creative potential with graphic design.",
-        "curriculum": ["Typography and Layout", "Image Editing with Adobe Photoshop", "Logo Design", "UI/UX Design Principles"]
-      },
-      {
-        "courseName": "Graphic Design Masterclass",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "Design",
-        "enroll": 2800,
-        "duration": "8 weeks",
-        "rating": 4.6,
-        "courseFee": 129.99,
-        "lessons": 18,
-        "courseDescription": "Unlock your creative potential with graphic design.",
-        "curriculum": ["Typography and Layout", "Image Editing with Adobe Photoshop", "Logo Design", "UI/UX Design Principles"]
-      },
-      {
-        "courseName": "Graphic Design Masterclass",
-        "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
-        "category": "Design",
-        "enroll": 2800,
-        "duration": "8 weeks",
-        "rating": 4.6,
-        "courseFee": 129.99,
-        "lessons": 18,
-        "courseDescription": "Unlock your creative potential with graphic design.",
-        "curriculum": ["Typography and Layout", "Image Editing with Adobe Photoshop", "Logo Design", "UI/UX Design Principles"]
-      }
-  ]
-  
-
-  
+[
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Web Development Bootcamp",
+    "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
+    "category": "WebDevelopment",
+    "enroll": 3500,
+    "duration": "8 weeks",
+    "rating": 4.8,
+    "courseFee": 149.99,
+    "lessons": 20,
+    "courseDescription": "Become a full-stack web developer and build dynamic web applications.",
+    "curriculum": [
+      "HTML and CSS",
+      "JavaScript Fundamentals",
+      "Node.js and Express.js",
+      "React.js",
+      "Database Management"
+    ]
+  },
+  {
+    "courseName": "Web Development Bootcamp",
+    "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
+    "category": "WebDevelopment",
+    "enroll": 3500,
+    "duration": "8 weeks",
+    "rating": 4.8,
+    "courseFee": 149.99,
+    "lessons": 20,
+    "courseDescription": "Become a full-stack web developer and build dynamic web applications.",
+    "curriculum": [
+      "HTML and CSS",
+      "JavaScript Fundamentals",
+      "Node.js and Express.js",
+      "React.js",
+      "Database Management"
+    ]
+  },
+  {
+    "courseName": "Web Development Bootcamp",
+    "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
+    "category": "WebDevelopment",
+    "enroll": 3500,
+    "duration": "8 weeks",
+    "rating": 4.8,
+    "courseFee": 149.99,
+    "lessons": 20,
+    "courseDescription": "Become a full-stack web developer and build dynamic web applications.",
+    "curriculum": [
+      "HTML and CSS",
+      "JavaScript Fundamentals",
+      "Node.js and Express.js",
+      "React.js",
+      "Database Management"
+    ]
+  },
+  {
+    "courseName": "Web Development Bootcamp",
+    "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
+    "category": "WebDevelopment",
+    "enroll": 3500,
+    "duration": "8 weeks",
+    "rating": 4.8,
+    "courseFee": 149.99,
+    "lessons": 20,
+    "courseDescription": "Become a full-stack web developer and build dynamic web applications.",
+    "curriculum": [
+      "HTML and CSS",
+      "JavaScript Fundamentals",
+      "Node.js and Express.js",
+      "React.js",
+      "Database Management"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/FkvZSrq/thomas-lefebvre-gp8-BLya-Ta-A0-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Photography Essentials",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    " category": "Photography",
+    "enroll": 2200,
+    "duration": "6 weeks",
+    "rating": 4.4,
+    "courseFee": 79.99,
+    "lessons": 10,
+    "courseDescription": "Master the art of photography and composition.",
+    "curriculum": [
+      "Camera Basics",
+      "Composition Techniques",
+      "Lighting and Exposure",
+      "Post-Processing with Adobe Lightroom"
+    ]
+  },
+  {
+    "courseName": "Digital Marketing Strategy",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "Marketing",
+    "enroll": 3200,
+    "duration": "12 weeks",
+    "rating": 4.9,
+    "courseFee": 199.99,
+    "lessons": 24,
+    "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
+    "curriculum": [
+      "SEO and Content Marketing",
+      "Social Media Advertising",
+      "Email Marketing",
+      "Analytics and ROI"
+    ]
+  },
+  {
+    "courseName": "Digital Marketing Strategy",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "Marketing",
+    "enroll": 3200,
+    "duration": "12 weeks",
+    "rating": 4.9,
+    "courseFee": 199.99,
+    "lessons": 24,
+    "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
+    "curriculum": [
+      "SEO and Content Marketing",
+      "Social Media Advertising",
+      "Email Marketing",
+      "Analytics and ROI"
+    ]
+  },
+  {
+    "courseName": "Digital Marketing Strategy",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "Marketing",
+    "enroll": 3200,
+    "duration": "12 weeks",
+    "rating": 4.9,
+    "courseFee": 199.99,
+    "lessons": 24,
+    "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
+    "curriculum": [
+      "SEO and Content Marketing",
+      "Social Media Advertising",
+      "Email Marketing",
+      "Analytics and ROI"
+    ]
+  },
+  {
+    "courseName": "Digital Marketing Strategy",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "Marketing",
+    "enroll": 3200,
+    "duration": "12 weeks",
+    "rating": 4.9,
+    "courseFee": 199.99,
+    "lessons": 24,
+    "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
+    "curriculum": [
+      "SEO and Content Marketing",
+      "Social Media Advertising",
+      "Email Marketing",
+      "Analytics and ROI"
+    ]
+  },
+  {
+    "courseName": "Digital Marketing Strategy",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "Marketing",
+    "enroll": 3200,
+    "duration": "12 weeks",
+    "rating": 4.9,
+    "courseFee": 199.99,
+    "lessons": 24,
+    "courseDescription": "Learn the ins and outs of digital marketing for businesses.",
+    "curriculum": [
+      "SEO and Content Marketing",
+      "Social Media Advertising",
+      "Email Marketing",
+      "Analytics and ROI"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/zX5GyXk/brooke-lark-W1-B2-Lp-QOBx-A-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Data Science Fundamentals",
+    "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
+    "category": "DataScience",
+    "enroll": 1800,
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "courseFee": 179.99,
+    "lessons": 15,
+    "courseDescription": "Explore the world of data science and analysis.",
+    "curriculum": [
+      "Data Collection and Cleaning",
+      "Exploratory Data Analysis",
+      "Machine Learning Basics",
+      "Data Visualization"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseImage": "https://i.ibb.co/NNr3RXz/chris-montgomery-smg-Tvepind4-unsplash.jpg",
+    "category": "ComputerScience",
+    "enroll": 2500,
+    "duration": "6 weeks",
+    "rating": 4.5,
+    "courseFee": 99.99,
+    "lessons": 12,
+    "courseDescriptio": "Learn the basics of programming and algorithmic thinking.",
+    "curriculum": [
+      "Introduction to Variables",
+      "Control Structures",
+      "Functions and Methods",
+      "Arrays and Lists"
+    ]
+  },
+  {
+    "courseName": "Graphic Design Masterclass",
+    "courseImage": "https://i.ibb.co/wSqNRTZ/sergey-zolkin-Ue-Y8a-TI6d0-unsplash.jpg",
+    "category": "Design",
+    "enroll": 2800,
+    "duration": "8 weeks",
+    "rating": 4.6,
+    "courseFee": 129.99,
+    "lessons": 18,
+    "courseDescription": "Unlock your creative potential with graphic design.",
+    "curriculum": [
+      "Typography and Layout",
+      "Image Editing with Adobe Photoshop",
+      "Logo Design",
+      "UI/UX Design Principles"
+    ]
+  },
+  {
+    "courseName": "Graphic Design Masterclass",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "Design",
+    "enroll": 2800,
+    "duration": "8 weeks",
+    "rating": 4.6,
+    "courseFee": 129.99,
+    "lessons": 18,
+    "courseDescription": "Unlock your creative potential with graphic design.",
+    "curriculum": [
+      "Typography and Layout",
+      "Image Editing with Adobe Photoshop",
+      "Logo Design",
+      "UI/UX Design Principles"
+    ]
+  },
+  {
+    "courseName": "Graphic Design Masterclass",
+    "courseImage": "https://i.ibb.co/KNtvtsm/nick-morrison-FHnnjk1-Yj7-Y-unsplash.jpg",
+    "category": "Design",
+    "enroll": 2800,
+    "duration": "8 weeks",
+    "rating": 4.6,
+    "courseFee": 129.99,
+    "lessons": 18,
+    "courseDescription": "Unlock your creative potential with graphic design.",
+    "curriculum": [
+      "Typography and Layout",
+      "Image Editing with Adobe Photoshop",
+      "Logo Design",
+      "UI/UX Design Principles"
+    ]
+  }
+]
