@@ -4,7 +4,7 @@ import { FaRegEye } from "react-icons/fa";
 import { BiTime } from "react-icons/bi";
 import { MdPlayLesson } from "react-icons/md";
 import { useParams } from "react-router-dom";
-import { linkWithCredential } from "firebase/auth";
+
 
 
 const CourseDetails = () => {
@@ -23,7 +23,7 @@ const CourseDetails = () => {
 
             <div className="">
 
-                <img src={details.courseImage} height={300} width={400} alt="" />
+                <img  src={details.courseImage} height={300} width={400} alt="" />
 
 
                 <div className="flex gap-10">
@@ -53,7 +53,7 @@ const CourseDetails = () => {
 
             </div>
 
-            <div className="text-white opacity-80 font-semibold space-y-6">
+            <div  className="text-white opacity-80 font-semibold space-y-6">
                   <h1 className=""> <span className="font-bold">Course Name :</span>  {details.courseName}</h1>
                   <h1><span className="font-bold">Course Category :</span>  {details.category}</h1>
                   <p> <span className="font-bold">Course Description :</span>  Become a full-stack web developer and build dynamic web applications.</p>
@@ -61,7 +61,7 @@ const CourseDetails = () => {
                      <h1 className="font-bold">Course Curriculum :</h1>
                   {
                      
-                    details.curriculum?.map(item=><li >{item}</li>)
+                    details.curriculum?.map(item=><li key={item} >{item}</li>)
                   }
             </div>
 

@@ -28,7 +28,7 @@ const Navber = () => {
                      <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>:
                        
                        
-                        <Link to='/'><li className="text-2xl font-light text-gray-700">About</li></Link>
+                        <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link>
 
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ const Navber = () => {
                       <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>:
                       
                    
-                    <Link to='/'><li className="text-2xl ml-12 font-light text-white">About</li></Link>
+                    <Link to='/mycourse'><li className="text-2xl ml-12 font-light text-white">My course</li></Link>
                 </ul>
             </div>
             <div className="navbar-end">

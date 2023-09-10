@@ -6,6 +6,7 @@ import Login from "../Page/Login/Login";
 import SignUp from "../Page/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import CourseDetails from "../Page/Course/CourseDetails";
+import Mycourse from "../Page/MyCourse/Mycourse";
 
 
 
@@ -34,6 +35,10 @@ import CourseDetails from "../Page/Course/CourseDetails";
             {
                path:'details/:id',
                element:<CourseDetails></CourseDetails>
+            },
+            {
+               path:'mycourse',
+               element:<Mycourse></Mycourse>
             }
 
             
