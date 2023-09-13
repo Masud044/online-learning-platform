@@ -25,10 +25,15 @@ const Navber = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[10]  p-2 shadow bg-base-100 rounded-box w-52">
                         <Link to='/'><li className="text-2xl font-light text-gray-700">Home</li></Link>
-                     <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>:
+                     <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>
+
+                     {
+                        user?<> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></>:
+                        <></>
+                     }
+
+                      
                        
-                       
-                        <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link>
 
                     </ul>
                 </div>
@@ -40,10 +45,15 @@ const Navber = () => {
                     <li tabIndex={0}>
 
                     </li>
-                      <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>:
+                      <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>
                       
-                   
-                    <Link to='/mycourse'><li className="text-2xl ml-12 font-light text-white">My course</li></Link>
+                   {
+                    user? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></>:
+                    <></>
+                   }
+                    
+                       
+                      
                 </ul>
             </div>
             <div className="navbar-end">

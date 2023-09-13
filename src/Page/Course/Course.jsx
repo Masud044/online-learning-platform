@@ -1,25 +1,14 @@
-import { useQuery } from '@tanstack/react-query'
+
 
 import { ColorRing } from 'react-loader-spinner';
 import CourseTab from './CourseTab';
-import { useRef, useState } from 'react';
+
+import UseCourse from '../../Hooks/UseCourse';
 
 const Course = () => {
-    const [activeTab, setActiveTab] = useState(" ");
-    
-
-    const { isLoading, data: course = [] } = useQuery({
-        queryKey: ['courses', activeTab],
-        queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/courses/${activeTab}`)
-            return res.json();
-        },
-    })
-
-    
-
-
    
+
+    const [course,isLoading,setActiveTab,activeTab] = UseCourse();
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
