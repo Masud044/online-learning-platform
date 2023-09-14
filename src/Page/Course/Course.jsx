@@ -5,15 +5,16 @@ import CourseTab from './CourseTab';
 
 import UseCourse from '../../Hooks/UseCourse';
 
-const Course = () => {
-   
 
-    const [course,isLoading,setActiveTab,activeTab] = UseCourse();
+const Course = () => {
+     
+
+    const [course, isLoading, setActiveTab, activeTab] = UseCourse();
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
     };
-
+   
     if (isLoading) {
         return <ColorRing
             visible={true}

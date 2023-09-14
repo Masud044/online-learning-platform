@@ -7,6 +7,7 @@ import SignUp from "../Page/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import CourseDetails from "../Page/Course/CourseDetails";
 import Mycourse from "../Page/MyCourse/Mycourse";
+import ManageUser from "../Admin/ManageUser/ManageUser";
 
 
 
@@ -39,6 +40,10 @@ import Mycourse from "../Page/MyCourse/Mycourse";
             {
                path:'mycourse',
                element:<Mycourse></Mycourse>
+            },
+            {
+              path:'manage',
+              element: <ManageUser></ManageUser>
             }
 
             

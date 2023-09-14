@@ -5,8 +5,8 @@ import { AuthContext } from "../Provider/AuthProvider";
 
 const Navber = () => {
     const { Logout, user } = useContext(AuthContext);
-    
-   
+
+
     const handleLogout = () => {
         Logout()
             .then(() => { })
@@ -25,15 +25,16 @@ const Navber = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[10]  p-2 shadow bg-base-100 rounded-box w-52">
                         <Link to='/'><li className="text-2xl font-light text-gray-700">Home</li></Link>
-                     <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>
+                        <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>
 
-                     {
-                        user?<> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></>:
-                        <></>
-                     }
+                        {
+                            user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></> :
+                                <></>
+                        }
+                        <Link to='/manage'><li className="text-2xl font-light text-gray-700">Admin</li></Link>
 
-                      
-                       
+
+
 
                     </ul>
                 </div>
@@ -45,22 +46,24 @@ const Navber = () => {
                     <li tabIndex={0}>
 
                     </li>
-                      <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>
-                      
-                   {
-                    user? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></>:
-                    <></>
-                   }
-                    
-                       
-                      
+                    <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>
+
+                    {
+                        user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></> :
+                            <></>
+                    }
+                    <Link to='/manage'><li className="text-2xl font-light text-white ml-4">Admin</li></Link>
+
+
+
+
                 </ul>
             </div>
             <div className="navbar-end">
                 {
                     user && <div className="mr-2">
                         <div className="tooltip tooltip-bottom z-20" data-tip={user?.displayName}>
-                           <img className="rounded-full w-12 h-12" src={user?.photoURL} alt="" />
+                            <img className="rounded-full w-12 h-12" src={user?.photoURL} alt="" />
                         </div>
                     </div>
                 }

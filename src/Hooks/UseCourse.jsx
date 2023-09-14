@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const UseCourse = () => {
     const [activeTab, setActiveTab] = useState(" ");
+   
     
 
     const { isLoading, data: course = [] } = useQuery({
