@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import useAdmin from "../Hooks/useAdmin";
 
 
 const Navber = () => {
     const { Logout, user } = useContext(AuthContext);
+
+    const [ , , users] = useAdmin();
 
 
     const handleLogout = () => {
@@ -31,7 +34,15 @@ const Navber = () => {
                             user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></> :
                                 <></>
                         }
-                        <Link to='/manage'><li className="text-2xl font-light text-gray-700">Admin</li></Link>
+
+                        {
+                            users.map(item=>{
+                                item.role == 'admin'?  <Link to='/manage'><li className="text-2xl font-light text-gray-700">Admin</li></Link>:<></>
+                            })
+                        }
+                          <Link to='/managecourse'><li className="text-2xl font-light text-gray-700 ">ManageCourse</li></Link>
+
+                       
 
 
 
@@ -52,7 +63,13 @@ const Navber = () => {
                         user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></> :
                             <></>
                     }
-                    <Link to='/manage'><li className="text-2xl font-light text-white ml-4">Admin</li></Link>
+                    {
+                            users.map(item=>{
+                                item.role == 'admin'?  <Link to='/manage'><li className="text-2xl font-light text-white ml-4">Admin</li></Link>:<></>
+                            })
+                        }
+                          <Link to='/managecourse'><li className="text-2xl font-light text-white ml-4">ManageCourse</li></Link>
+                   
 
 
 

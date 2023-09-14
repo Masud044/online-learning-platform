@@ -5,21 +5,13 @@ import { FcBusinesswoman } from "react-icons/fc";
 import { ColorRing } from "react-loader-spinner";
 
 import Swal from "sweetalert2";
+import useAdmin from "../../Hooks/useAdmin";
 
 
 const ManageUser = () => {
 
      
-    const { isLoading, refetch, data: users = [] } = useQuery({
-        queryKey: ['users'],
-        queryFn: async () => {
-            const res = await fetch('http://localhost:5000/user');
-            return res.json();
-
-        }
-
-
-    })
+    const [refetch,isLoading,users] = useAdmin();
 
     const handleadmin=(item)=>{
 
@@ -70,7 +62,7 @@ const ManageUser = () => {
                     </thead>
                     <tbody>
                         {
-                            users.map((item, index) => <tr key={item._id}>
+                            users?.map((item, index) => <tr key={item._id}>
                                 <td>{index + 1}</td>
                                 <td>{item.name}</td>
                                 <td>

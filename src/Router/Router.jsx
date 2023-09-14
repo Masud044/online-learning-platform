@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import CourseDetails from "../Page/Course/CourseDetails";
 import Mycourse from "../Page/MyCourse/Mycourse";
 import ManageUser from "../Admin/ManageUser/ManageUser";
+import ManageCourse from "../Admin/manageCourse/ManageCourse";
 
 
 
@@ -44,6 +45,10 @@ import ManageUser from "../Admin/ManageUser/ManageUser";
             {
               path:'manage',
               element: <ManageUser></ManageUser>
+            },
+            {
+               path:'managecourse',
+               element:<ManageCourse></ManageCourse>
             }
 
             
