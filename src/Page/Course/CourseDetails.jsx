@@ -19,7 +19,7 @@ const CourseDetails = () => {
     })
 
     return (
-        <div className="flex gap-40 bg-purple-600 p-4">
+        <div className="md:flex gap-40  bg-gray-300 p-4">
 
             <div className="">
 
@@ -35,7 +35,7 @@ const CourseDetails = () => {
 
                 </div>
                 <div className="flex gap-14 mt-6">
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 justify-center items-center">
 
                         <MdPlayLesson className="text-red-500 "></MdPlayLesson>
                         <p>{details.lessons}  Lession</p>
@@ -53,15 +53,15 @@ const CourseDetails = () => {
 
             </div>
 
-            <div  className="text-white opacity-80 font-semibold space-y-6">
-                  <h1 className=""> <span className="font-bold">Course Name :</span>  {details.courseName}</h1>
-                  <h1><span className="font-bold">Course Category :</span>  {details.category}</h1>
-                  <p> <span className="font-bold">Course Description :</span>  Become a full-stack web developer and build dynamic web applications.</p>
+            <div  className=" md:mt-0 mt-10 font-semibold space-y-6">
+                  <h1 className="text-black opacity-80"> <span className="font-bold ">Course Name :</span>  {details.courseName}</h1>
+                  <h1 className="text-black opacity-80"><span className="font-bold">Course Category :</span>  {details['category'] || details[' category']}</h1>
+                  <p className="text-black opacity-80"> <span className="font-bold">Course Description :</span>{details.courseDescription}</p>
 
-                     <h1 className="font-bold">Course Curriculum :</h1>
+                     <h1 className="font-bold text-black opacity-80">Course Curriculum :</h1>
                   {
                      
-                    details.curriculum?.map(item=><li key={item} >{item}</li>)
+                    details.curriculum?.map(item=><li className="text-black opacity-80" key={item} >{item}</li>)
                   }
             </div>
 

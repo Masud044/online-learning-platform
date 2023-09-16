@@ -9,6 +9,8 @@ import CourseDetails from "../Page/Course/CourseDetails";
 import Mycourse from "../Page/MyCourse/Mycourse";
 import ManageUser from "../Admin/ManageUser/ManageUser";
 import ManageCourse from "../Admin/manageCourse/ManageCourse";
+import CourseUpdate from "../Admin/courseUpdate/CourseUpdate";
+
 
 
 
@@ -49,7 +51,12 @@ import ManageCourse from "../Admin/manageCourse/ManageCourse";
             {
                path:'managecourse',
                element:<ManageCourse></ManageCourse>
-            }
+            },
+            {
+               path:'courseupdate/:id',
+               element:<CourseUpdate></CourseUpdate>
+            },
+           
 
             
          ]

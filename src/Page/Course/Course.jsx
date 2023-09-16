@@ -9,7 +9,7 @@ import UseCourse from '../../Hooks/UseCourse';
 const Course = () => {
      
 
-    const [course, isLoading, setActiveTab, activeTab] = UseCourse();
+    const [course, ,isLoading, setActiveTab, activeTab] = UseCourse();
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);

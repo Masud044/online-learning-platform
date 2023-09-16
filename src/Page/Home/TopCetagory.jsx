@@ -5,7 +5,7 @@ import { ColorRing } from "react-loader-spinner";
 
 const TopCetagory = () => {
 
-    const [course, isLoading] = UseCourse();
+    const [course, ,isLoading] = UseCourse();
     if(isLoading){
         return <ColorRing
         visible={true}
@@ -25,7 +25,7 @@ const TopCetagory = () => {
                 <Link to="/course"><button className="btn bg-purple-600 font-medium text-white border-none">See All Category</button></Link>
             </div>
 
-            <div className="grid grid-cols-4  items-center justify-between gap-4">
+            <div className="grid md:grid-cols-4  md:items-center md:justify-between justify-center gap-4">
                 {
                     course.slice(0, 8).map(item => {
                         {

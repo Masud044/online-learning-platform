@@ -1,13 +1,18 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import useAdmin from "../Hooks/useAdmin";
+
+import useAdminCheck from "../Hooks/useAdminCheck";
 
 
 const Navber = () => {
     const { Logout, user } = useContext(AuthContext);
+   
 
-    const [ , , users] = useAdmin();
+    const [isAdmin] = useAdminCheck();
+    
+
+   
 
 
     const handleLogout = () => {
@@ -31,16 +36,19 @@ const Navber = () => {
                         <Link to='/course'><li className="text-2xl font-light text-gray-700">Course</li></Link>
 
                         {
-                            user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></> :
+                            user &&  !isAdmin?.admin ?<> <Link to='/mycourse'><li className="text-2xl font-light text-gray-700">My course</li></Link></> :
                                 <></>
                         }
 
                         {
-                            users.map(item=>{
-                                item.role == 'admin'?  <Link to='/manage'><li className="text-2xl font-light text-gray-700">Admin</li></Link>:<></>
-                            })
+                         isAdmin?.admin? <Link to='/manage'><li className="text-2xl font-light text-gray-700">Admin</li></Link>:<></>
+                           
                         }
-                          <Link to='/managecourse'><li className="text-2xl font-light text-gray-700 ">ManageCourse</li></Link>
+                        {
+                         isAdmin?.admin ? <Link to='/managecourse'><li className="text-2xl font-light text-gray-700 ">ManageCourse</li></Link>:<></>
+                           
+                        }
+                         
 
                        
 
@@ -52,24 +60,32 @@ const Navber = () => {
                 <img src="https://i.ibb.co/DpMy2nG/sarmi2-08.jpg" width={80} height={80} alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
+                
                 <ul className="menu menu-horizontal px-1">
                     <Link to='/'><li className="text-2xl font-light text-white">Home</li></Link>
                     <li tabIndex={0}>
 
                     </li>
                     <Link to='/course'><li className="text-2xl font-light text-white">Course</li></Link>
+                   
+                        
 
                     {
-                        user ? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></> :
+                        user &&  !isAdmin?.admin ? <> <Link to='/mycourse'><li className="text-2xl font-light text-white ml-4">My course</li></Link></> :
                             <></>
                     }
-                    {
-                            users.map(item=>{
-                                item.role == 'admin'?  <Link to='/manage'><li className="text-2xl font-light text-white ml-4">Admin</li></Link>:<></>
-                            })
+                    
+                          
+                         {
+                           isAdmin?.admin ? <Link to='/manage'><li className="text-2xl font-light text-white ml-4">Admin</li></Link>:<></>
+                         }
+                           
+                        
+                          {
+                           isAdmin?.admin ?  <Link to='/managecourse'><li className="text-2xl font-light text-white ml-4 ">ManageCourse</li></Link>:<></>
+                          
                         }
-                          <Link to='/managecourse'><li className="text-2xl font-light text-white ml-4">ManageCourse</li></Link>
-                   
+                        
 
 
 
@@ -91,6 +107,7 @@ const Navber = () => {
                         <Link to='/login'> <button className="bg-purple-500 font-mono font-semibold text-white p-3 rounded-xl">Login</button></Link>
                     </>
                 }
+
 
             </div>
         </div>

@@ -7,7 +7,7 @@ const UseCourse = () => {
    
     
 
-    const { isLoading, data: course = [] } = useQuery({
+    const { isLoading,refetch, data: course = [] } = useQuery({
         queryKey: ['courses', activeTab],
         queryFn: async () => {
             const res = await fetch(`http://localhost:5000/courses/${activeTab}`)
@@ -15,7 +15,7 @@ const UseCourse = () => {
         },
        
     })
-    return [course,isLoading,setActiveTab,activeTab];
+    return [course,refetch,isLoading,setActiveTab,activeTab];
 };
 
 export default UseCourse;

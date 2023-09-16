@@ -11,12 +11,14 @@ import { AuthContext } from '../../Provider/AuthProvider';
 
 import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
+import useAdminCheck from '../../Hooks/useAdminCheck';
 
 const CourseTab = ({ item }) => {
 
      const {user} = useContext(AuthContext);
      const navigate = useNavigate();
      const location = useLocation();
+     const [isAdmin] = useAdminCheck();
     const { courseImage, rating, enroll, lessons, courseName, courseFee,_id } = item
 
     const handleMyclass=(item)=>{
@@ -88,7 +90,11 @@ const CourseTab = ({ item }) => {
                     </div>
 
                     <div className="card-actions">
-                     <button onClick={()=>handleMyclass(item)} className="btn  bg-purple-800 border-none w-full text-white ">Add Course</button>
+                        {
+                           isAdmin?.admin?<button disabled onClick={()=>handleMyclass(item)} className="btn  bg-purple-800 border-none w-full text-white ">Add Course</button>:
+                           <button onClick={()=>handleMyclass(item)} className="btn  bg-purple-800 border-none w-full text-white ">Add Course</button>
+                        }
+                     
                 </div>
             </div>
 
