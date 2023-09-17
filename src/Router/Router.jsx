@@ -10,6 +10,7 @@ import Mycourse from "../Page/MyCourse/Mycourse";
 import ManageUser from "../Admin/ManageUser/ManageUser";
 import ManageCourse from "../Admin/manageCourse/ManageCourse";
 import CourseUpdate from "../Admin/courseUpdate/CourseUpdate";
+import Modal from "../Page/MyCourse/ModalOpen";
 
 
 
