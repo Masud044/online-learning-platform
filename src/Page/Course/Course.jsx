@@ -4,6 +4,8 @@ import { ColorRing } from 'react-loader-spinner';
 import CourseTab from './CourseTab';
 
 import UseCourse from '../../Hooks/UseCourse';
+import Mycourse from '../MyCourse/Mycourse';
+import { key } from 'localforage';
 
 
 const Course = () => {
@@ -79,7 +81,13 @@ const Course = () => {
 
                 <div className='mt-20  grid md:grid-cols-3 items-center justify-center gap-4'>
                     {
-                        course.map(item => <CourseTab key={item._id} item={item}  ></CourseTab>)
+                        course.map(item => 
+                         
+                            <CourseTab key={item._id} item={item}  ></CourseTab>
+                           
+                        
+                           
+                       )
                     }
 
                 </div>

@@ -23,7 +23,7 @@ const CourseDetails = () => {
 
             <div className="">
 
-                <img  src={details.courseImage} height={300} width={400} alt="" />
+                <img src={details.courseImage} height={300} width={400} alt="" />
 
 
                 <div className="flex gap-10">
@@ -53,16 +53,20 @@ const CourseDetails = () => {
 
             </div>
 
-            <div  className=" md:mt-0 mt-10 font-semibold space-y-6">
-                  <h1 className="text-black opacity-80"> <span className="font-bold ">Course Name :</span>  {details.courseName}</h1>
-                  <h1 className="text-black opacity-80"><span className="font-bold">Course Category :</span>  {details['category'] || details[' category']}</h1>
-                  <p className="text-black opacity-80"> <span className="font-bold">Course Description :</span>{details.courseDescription}</p>
+            <div className=" md:mt-0 mt-10 font-semibold space-y-6">
+                <h1 className="text-black opacity-80"> <span className="font-bold ">Course Name :</span>  {details.courseName}</h1>
+                <h1 className="text-black opacity-80"><span className="font-bold">Course Category :</span>  {details['category'] || details[' category']}</h1>
+                <p className="text-black opacity-80"> <span className="font-bold">Course Description :</span>{details.courseDescription}</p>
 
-                     <h1 className="font-bold text-black opacity-80">Course Curriculum :</h1>
-                  {
-                     
-                    details.curriculum?.map(item=><li className="text-black opacity-80" key={item} >{item}</li>)
-                  }
+                <h1 className="font-bold text-black opacity-80">Course Curriculum :</h1>
+                {
+
+                    details.curriculum?.map(item => <li className="text-black opacity-80" key={item} >{item}</li>)
+                }
+               {
+                 details.feedback?<p className="text-black opacity-80"> <span className="font-bold">Course Feedback :</span>{details.feedback}</p>:<></>
+               }
+                
             </div>
 
         </div>

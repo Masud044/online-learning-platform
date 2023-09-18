@@ -5,11 +5,13 @@ import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
 import { ColorRing } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
-import Modal from "./ModalOpen";
-import ModalOpen from "./ModalOpen";
+import UseCourse from "../../Hooks/UseCourse";
 
 const Mycourse = () => {
+    const [course] = UseCourse();
+   
     const [showModal, setShowModal] = useState(false);
+    const [selectedItemId, setSelectedItemId] = useState(null);
     const { user } = useContext(AuthContext);
     const [asc, setdes] = useState(true);
     const navigate = useNavigate();
@@ -19,9 +21,8 @@ const Mycourse = () => {
     const { isLoading, refetch, data: mycourse = [] } = useQuery({
         queryKey: ['mycourse', user?.email, asc],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/mycourse?email=${user?.email}&sort=${asc ? 'asc' : 'des'}`, {
-                headers:
-                {
+            const res = await fetch(`http://localhost:5000/mycourse?email=${user?.email}&sort=${asc ? 'asc' : 'des'}`,{
+                headers:{
                     authorization: `bearer ${token}`
                 }
             });
@@ -70,9 +71,32 @@ const Mycourse = () => {
             }
         })
     }
-    const handlemodal = () => {
+   
+    const handlemodal = (id) => {
         
-         console.log(modalref.current.value)
+         
+          console.log(id)
+
+         fetch(`http://localhost:5000/feedback/${id}`,{
+             method:'PATCH',
+             headers:{
+                'content-type':'application/json',
+             },
+             body:JSON.stringify({feedback:modalref.current.value})
+         })
+         .then(res=>res.json())
+         .then(data=>{
+            if(data.modifiedCount>0){
+                refetch();
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'your feedback successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+         })
     }
 
     if (isLoading) {
@@ -102,15 +126,23 @@ const Mycourse = () => {
                     <p className="font-bold text-orange-600">${item.courseFee}</p>
 
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleDelete(item)} className="btn bg-red-600 text-white">delete</button>
-                        <button
-                            className="bg-blue-200 text-black active:bg-blue-500 
-      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                            type="button"
-                            onClick={() => setShowModal(true)}
-                        >
-                           Feedback
-                        </button>
+                       
+                            <button onClick={() => handleDelete(item)} className="btn bg-red-600 text-white">delete</button>
+
+                          
+                                  <button 
+                                     className="bg-blue-200 text-black active:bg-blue-500 
+               font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                     type="button"
+                                     onClick={() =>{
+                                        setShowModal(true)
+                                        setSelectedItemId(item.classId) }}
+                                     
+                                 >
+                                    Feedback
+                                 </button>
+                         
+                       
                         {showModal ? (
                             <>
                                 <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
@@ -121,9 +153,10 @@ const Mycourse = () => {
                                                
                                             </div>
                                             <div className="relative p-6 flex-auto">
-                                                <form className="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 w-full">
+                                                <form  className="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 w-full">
                                                 <textarea ref={modalref} className="textarea textarea-bordered" placeholder="comments"></textarea>
-                                                   
+                                                 
+                                               
                                                 </form>
                                             </div>
                                             <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
@@ -137,7 +170,7 @@ const Mycourse = () => {
                                                 <button
                                                     className="text-white bg-yellow-500 active:bg-yellow-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                                                     type="button"
-                                                    onClick={handlemodal}
+                                                    onClick={()=>handlemodal(selectedItemId)}
                                                 >
                                                     Submit
                                                 </button>

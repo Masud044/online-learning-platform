@@ -1,10 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { useContext } from "react";
-import { AuthContext } from "../Provider/AuthProvider";
+
 
 
 const useAdmin = () => {
-     const {user} = useContext(AuthContext);
+ 
     const { isLoading, refetch, data: users } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
